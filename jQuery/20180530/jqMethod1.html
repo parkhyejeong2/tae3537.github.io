@@ -1,0 +1,42 @@
+<!doctype html> <!-- jqMethod1.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"
+/>
+<title>jQuery get/set메소드 테스트
+</title>
+<script src="https://ajax.googleais.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){  //document/window 이벤트
+$("button1").click(function(){  //mouseclickevent
+$("#displayArea").text($"korea").text());  //get&set
+});
+$("button2").click(function(){ 
+$("#displayArea").text($"usa").text());  //get&set
+});
+$("#button2").mouseenter(function(){  //mouseenter실행(button2)
+alert("마우스엔터"); //window popup
+});
+});
+</script>
+</head>
+<body>
+<p id="korea">
+대한민국 서울
+</p>
+<p id="usa">
+미국 워싱턴
+</p>
+<button id="button1">
+한국
+</button>
+<button id="button2">
+미국
+</button>
+<br/>
+<br/>
+<div id="displayArea">
+</div>
+</body>
+</html>
