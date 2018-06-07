@@ -1,10 +1,10 @@
 <!DOCTYPEhtml>   <!-- getElementsByTagName.html-->
 <html><head><meta charset="utf-8"/><meta name="viewport"  content="width=device-width, initial-scale=1"/>
 <script>
-function fnGetElementsByTagName(){
+function fnGetElementByTagName(){
 var accessTag=document.getElementByTagName("input")[0];
 console.log(accessTag.tagName);
-accessTag.setAttribute("value", "getElementsById실행!");
+accessTag.setAttribute("value", "getElementById실행!");
 }
 </script><title>웹 프로그래밍 실습</title></head>
 <body>
@@ -17,6 +17,6 @@ accessTag.setAttribute("value", "getElementsById실행!");
   <input id="button_id1"type="button"name="user_id" value="입력"/><br/>
   빈칸에 검색어를 넣고 입력해 주세요.
  </form>
- <form><input type="button" onclick="fnGetElementsByTagName();" value="변경실행"/></form>
+ <form><input type="button" onclick="fnGetElementByTagName();" value="변경실행"/></form>
 </section>
 </body></html>
